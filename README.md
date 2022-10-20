@@ -17,4 +17,14 @@ Use of `mvn clean package` will allow developer to continuously work on individu
 Use of `mvn clean package install` will perform docker build with generated target/{artifact_jar} and push to the docker registry. Pipeline can be tailored to perform this in stages. i.e., perform unit test, generate image, deploy on Jenkins worker node, perform regression testing, tag the docker image and mark for release.
 
 
-Note: Versioning strategy can be driven by pom.xml for jars and Dockerfile for images. Please refer the strategy that suits best for your business.
+## Test Demo Application
+The application url (standard on most spring boot apps) is as below:
+
+http://localhost:8080
+
+## Further Notes
+1. Versioning strategy can be driven by pom.xml for jars and Dockerfile for images. Please refer the strategy that suits best for your business.
+
+2. Refer https://docs.gitlab.com/ee/ci/docker/ for GitLab
+
+3. Refer https://sean-bradley.medium.com/auto-devops-with-gitlab-ci-and-docker-compose-f931233f080f
